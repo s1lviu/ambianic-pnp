@@ -7,6 +7,6 @@ COPY src ./src
 COPY config ./config
 COPY app.json .
 RUN npm install
-EXPOSE 9779
+EXPOSE 443
 ENTRYPOINT ["node", "bin/ambianic-pnp"]
-CMD [ "--port", "9779", "--path", "/myapp" ]
+CMD [ "--port", "443", "--path", "/myapp" ]
