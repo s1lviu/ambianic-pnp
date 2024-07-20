@@ -9,4 +9,4 @@ COPY app.json .
 RUN npm install
 EXPOSE 443
 ENTRYPOINT ["node", "bin/ambianic-pnp"]
-CMD [ "--port", "443", "--path", "/myapp" ]
+CMD [ "--port", "443", "--path", "/" ]
